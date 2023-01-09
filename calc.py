@@ -100,10 +100,10 @@ def calc(user_operation):
         try:
             res = eval(oper_str)
         except ZeroDivisionError:
-            return 'Деление на 0 невозможно '
+            return 'Деление на 0 невозможно'
         except SyntaxError:
             if oper_str.count('(') != oper_str.count(')'):
-                return 'Неккоректная вложенность скобок. Количество открывающих скобок не равно количеству закрывающих'
+                return 'Неккоректная вложенность скобок. Количество открывающих скобок не равно количеству закрывающих '
     if type(res) == float:
         res = round(res, 4)
     print(res)
